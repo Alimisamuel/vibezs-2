@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/butler');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: outfit;
+}
+a{
+    text-decoration: none;
+}
+.text_3{
+    background-image: url('./assets/img/vectors/text3.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+    padding-bottom: 12px;
+
+}
+.text{
+    background: linear-gradient(90deg, #00DAFF 0%, #31BAFD 16%, #7190FA 38%, #A46EF7 59%, #C856F5 76%, #DF47F4 91%, #E742F4 100%);
+    
+        background-clip: text;
+        -webkit-background-clip: text;
+        /* For Safari */
+        color: transparent;
+}
+.text_3_2{
+    background: url('./assets/img/vectors/text3.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+    padding-bottom: 24px;
+}
+.text_2{
+    background: url('./assets/img/vectors/text2.svg');
+    background-repeat: no-repeat;
+    background-position-y: top;
+
+    padding-right: -10px;
+}
+.text_1{
+    background: url('./assets/img/vectors/text1.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+    padding-right: 70px;
+}
+.mobile{
+   padding: 0px 50px;
+   padding-bottom: 20px;
+}
+.text_3_mobile{
+    background: url('./assets/img/vectors/text3.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+padding-left: 0%;
+    padding-bottom: 20px;
+}
