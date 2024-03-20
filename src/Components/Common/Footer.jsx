@@ -104,7 +104,7 @@ const Footer = () => {
           sx={{
             width: "100%",
             backgroundColor: "#151515",
-            height: { md: "234px", xs: "auto" },
+            height: { md: "260px", xs: "auto" },
             backgroundImage: `url('${img2}')`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",
@@ -119,9 +119,9 @@ const Footer = () => {
               justifyContent: "space-between",
               width: "85%",
               margin: "0 auto",
-              height: "100%",
+              height: "200px",
               flexDirection: { md: "row", xs: "column" },
-              rowGap: 4,
+              rowGap: 3,
             }}
           >
             <Box>
@@ -133,7 +133,7 @@ const Footer = () => {
               <>
                 <Box>
                   <Link to="/terms-and-condition">
-                    <Typography sx={{ color: "#c5c5c5", fontSize: "14px" }}>
+                    <Typography sx={{ color: "#c5c5c5", fontSize: "12px" }}>
                       Terms & Condition
                     </Typography>
                   </Link>
@@ -141,9 +141,9 @@ const Footer = () => {
                     <Typography
                       sx={{
                         color: "#c5c5c5",
-                        fontSize: "14px",
+                        fontSize: "12px",
                         textAlign: "center",
-                        mt:1
+                        mt: 1,
                       }}
                     >
                       Privacy Policy
@@ -153,9 +153,9 @@ const Footer = () => {
                     <Typography
                       sx={{
                         color: "#c5c5c5",
-                        fontSize: "14px",
+                        fontSize: "12px",
                         textAlign: "center",
-                        mt:1
+                        mt: 1,
                       }}
                     >
                       Cookies Policy
@@ -175,10 +175,10 @@ const Footer = () => {
               </>
             )}
 
-            <Box>
+            <Box sx={{}}>
               <Box
                 sx={{
-                  mt: { md: 2, xs: 3 },
+                  mt: { md: 2, xs: 0 },
                   display: "flex",
                   columnGap: 2,
                 }}

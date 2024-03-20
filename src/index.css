@@ -17,6 +17,15 @@ a{
     padding-bottom: 12px;
 
 }
+.text_3_m{
+    background-image: url('./assets/img/vectors/text3.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+
+    padding-bottom: 10px;
+
+}
 .text{
     background: linear-gradient(90deg, #00DAFF 0%, #31BAFD 16%, #7190FA 38%, #A46EF7 59%, #C856F5 76%, #DF47F4 91%, #E742F4 100%);
     
@@ -30,7 +39,7 @@ a{
     background-repeat: no-repeat;
     background-position-y: bottom;
 
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
 }
 .text_2{
     background: url('./assets/img/vectors/text2.svg');
@@ -38,6 +47,15 @@ a{
     background-position-y: top;
 
     padding-right: -10px;
+}
+.text_2_m{
+    background: url('./assets/img/vectors/text2.svg');
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-size: 12px;
+    
+
+    /* margin-top: -10px; */
 }
 .text_1{
     background: url('./assets/img/vectors/text1.svg');

@@ -66,18 +66,16 @@ const CustomInput = () => {
             onChange={handleInputChange}
             InputProps={{
               style: {
-                border: "1px solid #75007E",
-                borderRadius: "12px",
+                border: "0.6px solid #F489FD",
+                borderRadius: "7px",
                 color: "#8f8f8f",
-                height:'60px',
+                height: "54px",
                 fontFamily: "outfit",
                 background: "transparent",
               },
             }}
           />
-          <Box
-            sx={{  width: "70%", margin:'0 auto', mt:1}}
-          >
+          <Box sx={{ width: "70%", margin: "0 auto", mt: 1 }}>
             {error ? (
               <CustomButtonGradient disabled sx={{ mt: 1, width: "70%" }}>
                 Not a valid email
@@ -105,7 +103,7 @@ const CustomInput = () => {
               borderRadius: "12px",
               color: "#8f8f8f",
               fontFamily: "outfit",
-                    height:'60px',
+              height: "60px",
               background: "transparent",
             },
             endAdornment: (

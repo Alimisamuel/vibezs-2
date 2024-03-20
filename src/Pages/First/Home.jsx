@@ -11,10 +11,10 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Common/Navbar";
 import Banner from "../../Components/Common/Banner";
 import bg from "../../assets/img/vectors/bg2.svg";
-import mock1 from "../../assets/img/vectors/mockup1.svg";
-import mock2 from "../../assets/img/vectors/mockup2.svg";
-import mock3 from "../../assets/img/vectors/mockup3.svg";
-import mock4 from "../../assets/img/vectors/mockup4.svg";
+import mock1 from "../../assets/img/vectors/mock1.png";
+import mock2 from "../../assets/img/vectors/mock2.png";
+import mock3 from "../../assets/img/vectors/mock3.png";
+import mock4 from "../../assets/img/vectors/mock4.png";
 import star from "../../assets/img/vectors/star.svg";
 import { BrandConfig } from "../../assets/img/brand/BrandConfig";
 import line from "../../assets/img/vectors/line.svg";
@@ -52,6 +52,42 @@ const Home = () => {
     cssEase: "linear",
     rtl: true,
   };
+  const settings3 = {
+    dots: false,
+    Infinite: true,
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    rtl: true,
+  };
+  const settings5 = {
+    dots: false,
+    Infinite: true,
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    rtl: true,
+  };
+  const settings4 = {
+    dots: false,
+    Infinite: true,
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    // rtl: true,
+  };
 
   return (
     <>
@@ -62,19 +98,19 @@ const Home = () => {
           bgcolor: "#151515",
           backgroundImage: `url('${bg}')`,
           boxSizing: "border-box",
+          backgroundSize: { md: "contain", xs: "cover" },
         }}
       >
         <Box
           sx={{
-            width: {md:"75%", xs:'85%'},
-          
+            width: { md: "75%", xs: "80%" },
+
             margin: "0 auto",
             // height: "600px",
             pt: 12,
-            pb: 7,
           }}
         >
-          <Grid container spacing={4}>
+          <Grid container spacing={8} sx={{ pb: 7,  }}>
             <Grid
               item
               md={6}
@@ -83,10 +119,10 @@ const Home = () => {
                 display: "flex",
                 // alignItems: "center",
                 flexDirection: "column",
-                alignItems: "start",
+                alignItems: "end",
               }}
             >
-              <Box
+              {/* <Box
                 sx={{
                   bgcolor: "#1e1e1e",
                   p: 1,
@@ -95,70 +131,67 @@ const Home = () => {
                   width: { lg: "430px", md: "380px" },
                   height: "520px",
                 }}
-              >
-                <Box
-                  sx={{
-                    background: `url('${mock1}')`,
-                    height: "100%",
-                    borderRadius: "24px",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "bottom",
-                    backgroundColor: "#04011533",
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      fontFamily: "butler",
-                      color: "#dedede",
-                      fontSize: "22px",
-                      textAlign: "center",
-                      width: { md: "60%", sm: "80%" },
-                      margin: "0 auto",
-                      pt: 4,
-                      lineHeight: "28px",
-                    }}
-                  >
-                    Secure Exclusive Tables at Premier Upscale Dining Spots and
-                    lounges in your city.
-                  </Typography>
-                </Box>
-              </Box>
+              > */}
               <Box
                 sx={{
-                  bgcolor: "#1e1e1e",
-                  p: 1,
+                  background: `url('${mock1}')`,
+                  width: { lg: "430px", md: "380px" },
+                  height: "520px",
                   borderRadius: "24px",
-                  boxSizing: "border-box",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "bottom",
+                  backgroundColor: "#04011533",
+                  backgroundSize: "contain",
+                  border: "7px solid #2d2e2f",
+                  outline: "1px solid #cccccc33",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontFamily: "butler",
+                    color: "#dedede",
+                    fontSize: "22px",
+                    textAlign: "center",
+                    width: { md: "60%", xs: "80%" },
+                    margin: "0 auto",
+                    pt: 4,
+                    lineHeight: "28px",
+                  }}
+                >
+                  Secure Exclusive Tables at Premier Upscale Dining Spots and
+                  lounges in your city.
+                </Typography>
+              </Box>
+
+              <Box
+                sx={{
+                  background: `url('${mock3}')`,
                   width: { lg: "430px", md: "380px" },
                   height: "420px",
+                  borderRadius: "24px",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "bottom",
+                  backgroundColor: "#04011533",
+                  backgroundSize: "300px",
+                  border: "7px solid #2d2e2f",
+                  outline: "1px solid #cccccc33",
                   mt: 4,
                 }}
               >
-                <Box
+                <Typography
                   sx={{
-                    background: `url('${mock3}')`,
-                    height: "100%",
-                    borderRadius: "24px",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "bottom",
-                    backgroundColor: "#04011533",
+                    fontFamily: "butler",
+                    color: "#dedede",
+                    fontSize: "22px",
+                    textAlign: "center",
+                    width: { md: "60%", xs: "80%" },
+                    margin: "0 auto",
+                    pt: 4,
+                    lineHeight: "28px",
                   }}
                 >
-                  <Typography
-                    sx={{
-                      fontFamily: "butler",
-                      color: "#dedede",
-                      fontSize: "22px",
-                      textAlign: "center",
-                      width: { md: "60%", sm: "80%" },
-                      margin: "0 auto",
-                      pt: 4,
-                      lineHeight: "28px",
-                    }}
-                  >
-                    Invite Guests to your Table with Ease and Style.
-                  </Typography>
-                </Box>
+                  Invite Guests to your Table with Ease and Style.
+                </Typography>
               </Box>
             </Grid>
             <Grid
@@ -167,85 +200,73 @@ const Home = () => {
               sm={6}
               sx={{
                 display: "flex",
-                alignItems: "end",
+                alignItems: "start",
 
                 flexDirection: "column",
               }}
             >
               <Box
                 sx={{
-                  bgcolor: "#1e1e1e",
-                  p: 1,
-                  borderRadius: "24px",
-                  boxSizing: "border-box",
+                  background: `url('${mock2}')`,
                   width: { lg: "430px", md: "380px" },
                   height: "420px",
+                  borderRadius: "24px",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "bottom",
+                  backgroundPositionX: "50px",
+                  backgroundSize: "contain",
+                  backgroundColor: "#04011533",
+                  border: "7px solid #2d2e2f",
+                  outline: "1px solid #cccccc33",
+                  mt: 4,
                 }}
               >
-                <Box
+                <Typography
                   sx={{
-                    background: `url('${mock2}')`,
-                    height: "100%",
-                    borderRadius: "24px",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "bottom center",
-
-                    backgroundColor: "#04011533",
+                    fontFamily: "butler",
+                    color: "#dedede",
+                    fontSize: "22px",
+                    textAlign: "center",
+                    width: { md: "60%", xs: "80%" },
+                    margin: "0 auto",
+                    pt: 4,
+                    lineHeight: "28px",
                   }}
                 >
-                  <Typography
-                    sx={{
-                      fontFamily: "butler",
-                      color: "#dedede",
-                      fontSize: "22px",
-                      textAlign: "center",
-                      width: { md: "60%", sm: "80%" },
-                      margin: "0 auto",
-                      pt: 4,
-                      lineHeight: "28px",
-                    }}
-                  >
-                    Effortlessly Split bills with Friends Directly from the App.
-                  </Typography>
-                </Box>
+                  Effortlessly Split bills with Friends Directly from the App.
+                </Typography>
               </Box>
+
               <Box
                 sx={{
-                  mt: 4,
-                  bgcolor: "#1e1e1e",
-                  p: 1,
-                  borderRadius: "24px",
-                  boxSizing: "border-box",
+                  background: `url('${mock4}')`,
                   width: { lg: "430px", md: "380px" },
                   height: "520px",
+                  borderRadius: "24px",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "bottom",
+                  backgroundColor: "#04011533",
+                  backgroundSize: "contain",
+                  border: "7px solid #2d2e2f",
+                  outline: "1px solid #cccccc33",
+                  mt: 4,
                 }}
               >
-                <Box
+                <Typography
                   sx={{
-                    background: `url('${mock4}')`,
-                    height: "100%",
-                    borderRadius: "24px",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "bottom",
-                    backgroundColor: "#04011533",
+                    fontFamily: "butler",
+                    color: "#dedede",
+                    fontSize: "22px",
+                    textAlign: "center",
+                    width: { md: "60%", xs: "80%" },
+                    margin: "0 auto",
+                    pt: 4,
+                    lineHeight: "28px",
                   }}
                 >
-                  <Typography
-                    sx={{
-                      fontFamily: "butler",
-                      color: "#dedede",
-                      fontSize: "22px",
-                      textAlign: "center",
-                      width: { md: "60%", sm: "80%" },
-                      margin: "0 auto",
-                      pt: 4,
-                      lineHeight: "28px",
-                    }}
-                  >
-                    Connect with New Friends by accepting People's Requests to
-                    join your table.
-                  </Typography>
-                </Box>
+                  Connect with New Friends by accepting People's Requests to
+                  join your table.
+                </Typography>
               </Box>
             </Grid>
           </Grid>
@@ -254,7 +275,7 @@ const Home = () => {
 
       <Box
         sx={{
-          width: { md: "70%", sm: "80%" },
+          width: { md: "70%", xs: "100%" },
           margin: "0 auto",
           p: 2,
           boxSizing: "border-box",
@@ -263,14 +284,14 @@ const Home = () => {
         }}
       >
         <Grid container spacing={6}>
-          <Grid item md={4} sm={12}>
+          <Grid item md={4} xs={12}>
             <Box>
               <Box
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   columnGap: 2,
-                  justifyContent: { md: "left", sm: "center" },
+                  justifyContent: { md: "left", xs: "center" },
                 }}
               >
                 <img src={star} />
@@ -279,7 +300,7 @@ const Home = () => {
                   sx={{
                     fontWeight: 700,
                     fontSize: "16px",
-                    textAlign: { md: "left", sm: "center" },
+                    textAlign: { md: "left", xs: "center" },
                   }}
                 >
                   Vendor Exclusivity
@@ -289,11 +310,11 @@ const Home = () => {
                 sx={{
                   fontFamily: "butler",
                   color: "#151515",
-                  fontSize: "22px",
+                  fontSize: { md: "22px", xs: "16px" },
                   fontWeight: 500,
-                  lineHeight: "30px",
-                  textAlign: {md:"justify",sm:'center'},
-                  width: { md: "fit-content", sm: "70%" },
+                  lineHeight: { md: "30px", xs: "20px" },
+                  textAlign: { md: "justify", xs: "center" },
+                  width: { md: "fit-content", xs: "80%" },
                   margin: "0 auto",
                   mt: 2,
                 }}
@@ -303,49 +324,117 @@ const Home = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item md={8} sm={12}>
-            <Box
-              sx={{
-                ml: { md: 8, sm: 0 },
-                display: "flex",
-                flexDirection: "column",
-                rowGap: 5,
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                {BrandConfig?.slice(0, 7).map((img, index) => (
-                  <img src={img} />
-                ))}
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                {BrandConfig?.slice(7, 14).map((img, index) => (
-                  <img src={img} />
-                ))}
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                {BrandConfig?.slice(14, 19).map((img, index) => (
-                  <img src={img} />
-                ))}
-              </Box>
-            </Box>
+          <Grid item md={8} xs={12}>
+            {isMobile ? (
+              <>
+                <Box
+                  sx={{
+                    ml: { md: 8, xs: 0 },
+                    display: "flex",
+                    flexDirection: "column",
+                    rowGap: 2,
+                    // mx:-15
+                  }}
+                >
+                  <Slider {...settings3}>
+                    {BrandConfig?.slice(0, 7).map((img, index) => (
+                      <Box
+                        sx={{
+                          mx: 4,
+                          height: "50px",
+                          width: "50px",
+                          background: `url('${img}')`,
+                          backgroundSize: "contain",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                        }}
+                      >
+                        {/* <img src={img} width={100} /> */}
+                      </Box>
+                    ))}
+                  </Slider>
+                  <Slider {...settings4}>
+                    {BrandConfig?.slice(7, 14).map((img, index) => (
+                      <Box
+                        sx={{
+                          mx: 4,
+                          height: "50px",
+                          width: "50px",
+                          background: `url('${img}')`,
+                          backgroundSize: "contain",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                        }}
+                      >
+                        {/* <img src={img} width={100} /> */}
+                      </Box>
+                    ))}
+                  </Slider>
+                  <Slider {...settings5}>
+                    {BrandConfig?.slice(12, 19).map((img, index) => (
+                      <Box
+                        sx={{
+                          mx: 4,
+                          height: "50px",
+                          width: "50px",
+                          background: `url('${img}')`,
+                          backgroundSize: "contain",
+                          backgroundPosition: "center",
+                          backgroundRepeat: "no-repeat",
+                        }}
+                      >
+                        {/* <img src={img} width={100} /> */}
+                      </Box>
+                    ))}
+                  </Slider>
+                </Box>
+              </>
+            ) : (
+              <>
+                <Box
+                  sx={{
+                    ml: { md: 8, xs: 0 },
+                    display: "flex",
+                    flexDirection: "column",
+                    rowGap: 5,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    {BrandConfig?.slice(0, 7).map((img, index) => (
+                      <img src={img} />
+                    ))}
+                  </Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    {BrandConfig?.slice(7, 14).map((img, index) => (
+                      <img src={img} />
+                    ))}
+                  </Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    {BrandConfig?.slice(14, 19).map((img, index) => (
+                      <img src={img} />
+                    ))}
+                  </Box>
+                </Box>
+              </>
+            )}
           </Grid>
         </Grid>
 
@@ -363,7 +452,7 @@ const Home = () => {
       </Box>
       <Box
         sx={{
-          height: "400px",
+          height: { md: "400px", xs: "200px" },
           overflow: "hidden",
           mt: 12,
         }}
@@ -415,7 +504,7 @@ const Home = () => {
           backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          py: 5,
+          py: { md: 5, xs: 0 },
         }}
       />
 

@@ -49,6 +49,7 @@ const Banner = () => {
             >
               <img src={launchImg} width={150} />
               <Typography
+         className="     text_3_m"
                 sx={{
                   color: "#151515",
                   fontWeight: 800,
@@ -58,12 +59,10 @@ const Banner = () => {
                   mt: 3,
                 }}
               >
-                Book & Reserve the most <span className="text_2">e</span>
+                Book & Reserve the most <span className="text_2_m">e</span>
                 xclusive Tables at the
-                <span className="text_3">
-                  <span className="text"> Elitist Spots </span>
-                </span>
-                in your City🌴
+          <span className="text"> Elitist Spots</span> in
+                    <span className="">  your City</span>🌴 
               </Typography>
               <Typography
                 sx={{
