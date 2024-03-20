@@ -109,10 +109,10 @@ const Banner = () => {
               backgroundAttachment: "fixed ",
               transition: "0.2s all linear",
               border: {
-                lg: "5px solid",
-                md: "15px solid red",
-                sm: "10px  solid",
-                xs: "20px solid",
+                // lg: "5px solid",
+                // md: "15px solid red",
+                // sm: "10px  solid",
+                // xs: "20px solid",
               },
             }}
           >
