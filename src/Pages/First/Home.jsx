@@ -26,6 +26,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import logos from "../../assets/img/vectors/logos.svg";
 import { AnimeConfig } from "../../assets/img/anime/AnimeConfig";
+import x from '../../assets/img/vectors/x.png'
 
 const Home = () => {
   const theme = useTheme();
@@ -442,79 +443,7 @@ const Home = () => {
         />
       </Box>
       <div className="anime">
-        <Box
-          sx={{
-            height: { md: "400px", xs: "200px" },
-            // overflow: "hidden",
-            mt: 12,
-          }}
-        >
-          <Box
-            sx={{
-              // height: "100px",
-              position: "relative",
-              boxSizing: "border-box",
-              top: 60,
-              bgcolor: "#FFF2E5",
-              border: "2px dashed #C56000",
-              transform: "rotate(-10deg)",
-              mx: -15,
-              // display: "flex",
-              // alignItems: "center",
-            }}
-          >
-            <Slider {...settings} style={{ height: "100%" }}>
-              {AnimeConfig.map((img, idex) => (
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    justifyContent: "center",
-
-                    height: "80px",
-                  }}
-                >
-                  {" "}
-                  <Box sx={{ mt: 2.4 }}>
-                    <img src={img} width={50} />
-                  </Box>
-                </Box>
-              ))}
-            </Slider>
-          </Box>
-          <Box
-            sx={{
-              height: "95px",
-              position: "relative",
-              boxSizing: "border-box",
-              bgcolor: "#FFF2E5",
-              border: "2px dashed #C56000",
-              transform: "rotate(10deg)",
-              mx: -15,
-            }}
-          >
-            <Box sx={{ height: "100%" }}>
-              <Slider {...settings2} style={{ height: "100%" }}>
-                {AnimeConfig.map((img, idex) => (
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignContent: "center",
-                      justifyContent: "center",
-
-                      height: "80px",
-                    }}
-                  >
-                    {" "}
-                    <Box sx={{ mt: 2.4 }}>
-                      <img src={img} width={50} />
-                    </Box>
-                  </Box>
-                ))}
-              </Slider>
-            </Box>
-          </Box>
-        </Box>
+    <img src={x} width={"100%"}/>
       </div>
       <Box
         sx={{

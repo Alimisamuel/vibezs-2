@@ -25,6 +25,15 @@ body{
     align-items: center;
     transition: .3s ease-in !important;
 }
+.hide_scrollbar::-webkit-scrollbar {
+    display: none;
+
+}
+
+.hide_scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 .anime{
     overflow-x: hidden;
 }

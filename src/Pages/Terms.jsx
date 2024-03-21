@@ -21,17 +21,17 @@ const navConfig = [
   {
     title: "Terms & Condition",
     link: "/terms-and-condition",
-    icon:thunnder
+    icon: thunnder,
   },
   {
     title: "Privacy Policy",
     link: "/privacy-policy",
-    icon:kite
+    icon: kite,
   },
   {
     title: "Cookies Policy",
     link: "/cookies-policy",
-    icon:star
+    icon: star,
   },
 ];
 
@@ -46,11 +46,9 @@ const Terms = () => {
         <>
           <Box
             sx={{
-     
               width: { md: "75%", xs: "90%" },
               margin: "0 auto",
               mt: 15,
-  
             }}
           >
             <TermsCo />
@@ -65,11 +63,17 @@ const Terms = () => {
               display: "flex",
               width: { md: "75%", xs: "90%" },
               margin: "0 auto",
-              mt: 15,
+              mt: 17,
               justifyContent: "space-between",
             }}
           >
-            <Box sx={{ width: "20%", display: { md: "block", xs: "none" } }}>
+            <Box
+              sx={{
+                width: "20%",
+                display: { md: "block", xs: "none" },
+                height: "80vh",
+              }}
+            >
               <Typography sx={{ fontWeight: 700, color: "#151515" }}>
                 VibezsUp Terms of Use
               </Typography>
@@ -83,7 +87,9 @@ const Terms = () => {
                         },
                       }}
                     >
-                      {router.pathname === item.link && <img src={item?.icon} />}
+                      {router.pathname === item.link && (
+                        <img src={item?.icon} />
+                      )}
 
                       <Typography
                         sx={{
@@ -101,12 +107,17 @@ const Terms = () => {
               </Box>
             </Box>
             <Box
+            className="hide_scrollbar"
               sx={{
                 width: { md: "75%", xs: "100%" },
                 background: `url('${bg}')`,
                 backgroundPosition: " right center",
                 backgroundRepeat: "no-repeat",
                 mb: 10,
+
+                height: "80vh",
+                overflow: "scroll",
+              
               }}
             >
               <Outlet />

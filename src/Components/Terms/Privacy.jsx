@@ -21,7 +21,9 @@ const Privacy = () => {
           Privacy Policy
         </Typography>
         <Box sx={{ mt: 2 }}>
-          <Typography sx={{ color: "#000000b7", fontSize: "14px" }}>
+          <Typography
+            sx={{ color: "#000000b7", fontSize: "14px", textAlign: "justify" }}
+          >
             Privacy is important to VibezsUp. This privacy policy outlines the
             types of personal information that is received and collected by
             VibezsUp and how it is used.
@@ -80,15 +82,22 @@ const Privacy = () => {
                 <br />
                 4.1. VibezsUp takes reasonable precautions to protect your
                 personal information from unauthorized access, use, or
-                disclosure.<br/><br/>
-                4.2. However, no method of transmission over the internet, or method of electronic storage, is 100% secure. Therefore, while we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+                disclosure.
+                <br />
+                <br />
+                4.2. However, no method of transmission over the internet, or
+                method of electronic storage, is 100% secure. Therefore, while
+                we strive to use commercially acceptable means to protect your
+                personal information, we cannot guarantee its absolute security.
               </li>
               <br />
               <li>
                 <b>Changes to Privacy Policy:</b>
                 <br />
                 <br />
-                5.1. VibezsUp reserves the right to update or change this privacy policy at any time. Any changes to the privacy policy will be posted on this page.
+                5.1. VibezsUp reserves the right to update or change this
+                privacy policy at any time. Any changes to the privacy policy
+                will be posted on this page.
               </li>
               <br />
               <li>

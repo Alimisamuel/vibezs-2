@@ -21,7 +21,7 @@ const Cookies = () => {
           Cookies Policy
         </Typography>
         <Box sx={{ mt: 2 }}>
-          <Typography sx={{ color: "#000000b7", fontSize: "14px" }}>
+          <Typography sx={{ color: "#000000b7", fontSize: "14px" ,textAlign:'justify'}}>
             VibezsUp uses cookies to improve your experience on our application.
             By using VibezsUp, you consent to the use of cookies in accordance
             with this policy.

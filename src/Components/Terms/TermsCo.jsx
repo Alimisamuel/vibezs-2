@@ -4,14 +4,16 @@ import React from "react";
 const TermsCo = () => {
   return (
     <>
-      <Box>
+      <Box sx={{ mt: 2 }}>
         <Typography
           sx={{ fontSize: "32px", fontWeight: 800, fontFamily: "butler" }}
         >
           Terms & Conditions
         </Typography>
         <Box sx={{ mt: 2 }}>
-          <Typography sx={{ color: "#000000b7", fontSize: "14px" }}>
+          <Typography
+            sx={{ color: "#000000b7", fontSize: "14px", textAlign: "justify" }}
+          >
             Welcome to VibezsUp! These terms and conditions outline the rules
             and regulations for the use of VibezsUp's platform.
             <br />
@@ -100,14 +102,20 @@ const TermsCo = () => {
                 <b>Limitation of Liability:</b>
                 <br />
                 <br />
-5.1. In no event shall VibezsUp be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill, arising from your use of the application.
+                5.1. In no event shall VibezsUp be liable for any indirect,
+                incidental, special, consequential, or punitive damages,
+                including but not limited to loss of profits, data, or goodwill,
+                arising from your use of the application.
               </li>
               <br />
               <li>
                 <b>Governing Law:</b>
                 <br />
                 <br />
-6.1. These terms and conditions are governed by and construed in accordance with the laws of the Federal Republic of Nigeria and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
+                6.1. These terms and conditions are governed by and construed in
+                accordance with the laws of the Federal Republic of Nigeria and
+                you irrevocably submit to the exclusive jurisdiction of the
+                courts in that State or location.
               </li>
             </ol>
           </Typography>

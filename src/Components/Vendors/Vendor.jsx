@@ -17,6 +17,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FooterVendor from "../Common/FooterVendor";
+import x from "../../assets/img/vectors/x.png";
 
 const Vendor = () => {
   const theme = useTheme();
@@ -56,6 +57,7 @@ const Vendor = () => {
                 width: "90%",
                 margin: "0 auto",
                 height: "100%",
+                mb:7
               }}
             >
               <Typography
@@ -150,7 +152,7 @@ const Vendor = () => {
 
             margin: "0 auto",
             // height: "600px",
-            pt: 12,
+            // pt: 12,
           }}
         >
           <Grid container spacing={8} sx={{ pb: 7 }}>
@@ -238,191 +240,120 @@ const Vendor = () => {
                 </Typography>
               </Box>
             </Grid>
-      {
-        isMobile ? (
-          <>
+            {isMobile ? (
+              <>
                 <Grid
-              item
-              md={12}
-              sm={12}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-
-                flexDirection: "column",
-              }}
-            >
-              <Box
-                align="right"
-                sx={{
-                  background: `url('${mock3}')`,
-                  width: { lg: "950px", md: "380px" },
-                  height: { md: "420px", xs: "320px" },
-                  borderRadius: "24px",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPositionY: "90px",
-                  backgroundPositionX: "-110px",
-                  backgroundSize: "600px",
-                  backgroundColor: "#04011533",
-                  border: "7px solid #2d2e2f",
-                  outline: "1px solid #cccccc33",
-                }}
-              >
-             
-                  <Typography
-                    sx={{
-                      fontFamily: "butler",
-                      color: "#dedede",
-                      fontSize: { md: "22px", xs: "16px" },
-                      textAlign: "center",
-                      width: { md: "60%", xs: "80%" },
-                      margin: "0 auto",
-                      pt: 4,
-                      lineHeight: { md: "28px", xs: "20px" },
-                    }}
-                  >
-                    Explore a robust and detailed Analytical Dashboard
-                    showcasing essential metrics for you and your team.
-                  </Typography>
-                
-              </Box>
-            </Grid>
-          </>
-        ):(
-          <>
-                <Grid
-              item
-              md={12}
-              sm={12}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-
-                flexDirection: "column",
-              }}
-            >
-              <Box
-                align="right"
-                sx={{
-                  background: `url('${mock3}')`,
-                  width: { lg: "950px", md: "380px" },
-                  height: { md: "420px", xs: "300px" },
-                  borderRadius: "24px",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPositionY: "90px",
-                  backgroundPositionX: "-110px",
-                  backgroundSize: "600px",
-                  backgroundColor: "#04011533",
-                  border: "7px solid #2d2e2f",
-                  outline: "1px solid #cccccc33",
-                }}
-              >
-                <Box
+                  item
+                  lg={12}
+                  md={12}
+                  sm={12}
+                  xs={12}
                   sx={{
-                    height: "100%",
-                    width: "40%",
-                    display: "grid",
-                    placeItems: "center",
+                    display: "flex",
+                    alignItems: "center",
+
+                    flexDirection: "column",
                   }}
                 >
-                  <Typography
+                  <Box
+                    align="right"
                     sx={{
-                      fontFamily: "butler",
-                      color: "#dedede",
-                      fontSize: { md: "22px", xs: "16px" },
-                      textAlign: "center",
-                      width: { md: "60%", xs: "80%" },
-                      margin: "0 auto",
-                      pt: 4,
-                      lineHeight: { md: "28px", xs: "20px" },
+                      background: `url('${mock3}')`,
+                      width: { lg: "950px", md: "380px" },
+                      height: { md: "420px", xs: "320px" },
+                      borderRadius: "24px",
+                      backgroundRepeat: "no-repeat",
+                      backgroundPositionY: "90px",
+                      backgroundPositionX: "-110px",
+                      backgroundSize: "600px",
+                      backgroundColor: "#04011533",
+                      border: "7px solid #2d2e2f",
+                      outline: "1px solid #cccccc33",
                     }}
                   >
-                    Explore a robust and detailed Analytical Dashboard
-                    showcasing essential metrics for you and your team.
-                  </Typography>
-                </Box>
-              </Box>
-            </Grid>
-          </>
-        )
-      }
+                    <Typography
+                      sx={{
+                        fontFamily: "butler",
+                        color: "#dedede",
+                        fontSize: { md: "22px", xs: "16px" },
+                        textAlign: "center",
+                        width: { md: "60%", xs: "80%" },
+                        margin: "0 auto",
+                        pt: 4,
+                        lineHeight: { md: "28px", xs: "20px" },
+                      }}
+                    >
+                      Explore a robust and detailed Analytical Dashboard
+                      showcasing essential metrics for you and your team.
+                    </Typography>
+                  </Box>
+                </Grid>
+              </>
+            ) : (
+              <>
+                <Grid
+                  item
+                  md={12}
+                  xs={12}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    // border:'1px solid red',
+                    flexDirection: "column",
+                  }}
+                >
+                  <Box
+                    align="right"
+                    sx={{
+                      background: `url('${mock3}')`,
+                      // width: { lg: "950px", md: "380px" },
+                      height: { md: "420px", xs: "300px" },
+                      borderRadius: "24px",
+                      backgroundRepeat: "no-repeat",
+                      backgroundPositionY: "90px",
+                      backgroundPositionX: "-110px",
+                      backgroundSize: "600px",
+                      backgroundColor: "#04011533",
+                      border: "7px solid #2d2e2f",
+                      outline: "1px solid #cccccc33",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        height: "100%",
+                        width: "40%",
+                        display: "grid",
+                        placeItems: "center",
+                      }}
+                    >
+                      <Typography
+                        sx={{
+                          fontFamily: "butler",
+                          color: "#dedede",
+                          fontSize: { md: "22px", xs: "16px" },
+                          textAlign: "center",
+                          width: { md: "60%", xs: "80%" },
+                          margin: "0 auto",
+                          pt: 4,
+                          lineHeight: { md: "28px", xs: "20px" },
+                        }}
+                      >
+                        Explore a robust and detailed Analytical Dashboard
+                        showcasing essential metrics for you and your team.
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Grid>
+              </>
+            )}
           </Grid>
         </Box>
       </Box>
-      <div className="anime">
-        <Box
-          sx={{
-            height: { md: "400px", xs: "200px" },
-            // overflow: "hidden",
-            mt: 12,
-          }}
-        >
-          <Box
-            sx={{
-              // height: "100px",
-              position: "relative",
-              boxSizing: "border-box",
-              top: 60,
-              bgcolor: "#FFF2E5",
-              border: "2px dashed #C56000",
-              transform: "rotate(-10deg)",
-              mx: -15,
-              // display: "flex",
-              // alignItems: "center",
-            }}
-          >
-            <Slider {...settings} style={{ height: "100%" }}>
-              {AnimeConfig.map((img, idex) => (
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    justifyContent: "center",
-
-                    height: "80px",
-                  }}
-                >
-                  {" "}
-                  <Box sx={{ mt: 2.4 }}>
-                    <img src={img} width={50} />
-                  </Box>
-                </Box>
-              ))}
-            </Slider>
-          </Box>
-          <Box
-            sx={{
-              height: "95px",
-              position: "relative",
-              boxSizing: "border-box",
-              bgcolor: "#FFF2E5",
-              border: "2px dashed #C56000",
-              transform: "rotate(10deg)",
-              mx: -15,
-            }}
-          >
-            <Box sx={{ height: "100%" }}>
-              <Slider {...settings2} style={{ height: "100%" }}>
-                {AnimeConfig.map((img, idex) => (
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignContent: "center",
-                      justifyContent: "center",
-
-                      height: "80px",
-                    }}
-                  >
-                    {" "}
-                    <Box sx={{ mt: 2.4 }}>
-                      <img src={img} width={50} />
-                    </Box>
-                  </Box>
-                ))}
-              </Slider>
-            </Box>
-          </Box>
-        </Box>
+      <div
+        className="anime"
+        style={{ marginTop: "40px", marginBottom: "40px" }}
+      >
+        <img src={x} width="100%" />
       </div>
       <Box
         sx={{

@@ -131,21 +131,20 @@ const BannerVibes = () => {
                 Generate and Review Boo
                 <span className="text_3">king Leads. </span>
               </Typography>
-
-              <Box
-                sx={{
-                  height: "400px",
-                  width: "100%",
-                  mt: 5,
-                  background: `url('${mock}')`,
-                  backgroundSize: "1700px",
-                  backgroundPositionY: "-50px",
-                  backgroundPositionX: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></Box>
             </Box>
           </Box>
+          <Box
+            sx={{
+              height: "400px",
+              width: "100%",
+              mt: 0,
+              background: `url('${mock}')`,
+              backgroundSize: "1700px",
+              backgroundPositionY: "-50px",
+              backgroundPositionX: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></Box>
         </>
       )}
     </>
