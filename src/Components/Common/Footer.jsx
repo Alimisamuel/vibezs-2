@@ -19,7 +19,7 @@ import twitter from "../../assets/img/vectors/Vector (2).svg";
 import insta from "../../assets/img/vectors/Vector (3).svg";
 import linkedin from "../../assets/img/vectors/Vector (4).svg";
 import line from "../../assets/img/vectors/Line 2.svg";
-import phone from "../../assets/img/vectors/Phone group.svg";
+import phone from "../../assets/img/vectors/Phone group.png";
 
 const Footer = () => {
   const theme = useTheme();
