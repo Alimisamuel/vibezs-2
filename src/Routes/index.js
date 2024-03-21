@@ -4,12 +4,17 @@ import Terms from "../Pages/Terms";
 import TermsCo from "../Components/Terms/TermsCo";
 import Privacy from "../Components/Terms/Privacy";
 import Cookies from "../Components/Terms/Cookies";
+import Vendor from "../Components/Vendors/Vendor";
 
 function Routes() {
   let element = useRoutes([
     {
       path: "/",
       element: <Home />,
+    },
+    {
+      path: "/vendor",
+      element: <Vendor />,
     },
     {
       element: <Terms />,

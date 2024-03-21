@@ -11,7 +11,7 @@ import launch from "../../assets/img/vectors/launch.png";
 import CustomInput from "../CustomInput";
 import playstore from "../../assets/img/vectors/googlestore.svg";
 import applestore from "../../assets/img/vectors/appstore.svg";
-import img1 from "../../assets/img/vectors/mock5.svg";
+import img1 from "../../assets/img/vectors/Mac Studio.png";
 import img2 from "../../assets/img/vectors/tree2.svg";
 import img3 from "../../assets/img/vectors/foot-m.svg";
 import logo from "../../assets/img/logo/logo.svg";
@@ -20,9 +20,9 @@ import twitter from "../../assets/img/vectors/Vector (2).svg";
 import insta from "../../assets/img/vectors/Vector (3).svg";
 import linkedin from "../../assets/img/vectors/Vector (4).svg";
 import line from "../../assets/img/vectors/Line 2.svg";
-import phone from "../../assets/img/vectors/Phone group.png";
+import phone from "../../assets/img/vectors/v-foot.png";
 
-const Footer = () => {
+const FooterVendor = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down(800));
   return (
@@ -41,19 +41,7 @@ const Footer = () => {
               >
                 <img src={phone} />
                 <CustomInput />
-                <Box
-                  sx={{
-                    mt: 5,
-                    mb: 7,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    columnGap: 3,
-                  }}
-                >
-                  <img src={applestore} />
-                  <img src={playstore} />
-                </Box>
+               
                 <Box
                   sx={{
                     my: 5,
@@ -71,29 +59,29 @@ const Footer = () => {
             <>
               <Grid container>
                 <Grid item md={5} sm={12}>
-                  <Box>
-                    <img src={launch} width={150} />
-                  </Box>
-                  <Box sx={{ mt: 3 }}>
-                    <CustomInput />
-                  </Box>
                   <Box
                     sx={{
-                      mt: 5,
                       display: "flex",
-                      alignItems: "center",
-                      // justifyContent: "center",
-                      columnGap: 3,
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      height: "100%",
                     }}
                   >
-                    <img src={applestore} />
-                    <img src={playstore} />
+                    <Box>
+                      <img src={launch} width={150} />
+                    </Box>
+                    <Box sx={{ mt: 3 }}>
+                      <CustomInput />
+                    </Box>
                   </Box>
                 </Grid>
                 <Grid md={1}></Grid>
                 <Grid md={6}>
-                  <Box align="right" sx={{ height: "327px" }}>
-                    <img src={img1} />
+                  <Box
+                    align="right"
+                    sx={{ height: "327px", overflow: "hidden" }}
+                  >
+                    <img src={img1} width={600} />
                   </Box>
                 </Grid>
               </Grid>
@@ -106,7 +94,7 @@ const Footer = () => {
             width: "100%",
             backgroundColor: "#151515",
             height: { md: "260px", xs: "auto" },
-            backgroundImage: isMobile ? `url('${img3}')` :  `url('${img2}')`,
+            backgroundImage: isMobile ? `url('${img3}')` : `url('${img2}')`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",
             backgroundSize: "contain",
@@ -131,15 +119,13 @@ const Footer = () => {
               </Link>
             </Box>
 
-              
-                <Box>
-                  <Link to="/terms-and-condition">
-                    <Typography sx={{ color: "#c5c5c5", fontSize: "14px" }}>
-                      Terms of Use
-                    </Typography>
-                  </Link>
-                </Box>
-        
+            <Box>
+              <Link to="/terms-and-condition">
+                <Typography sx={{ color: "#c5c5c5", fontSize: "14px" }}>
+                  Terms of Use
+                </Typography>
+              </Link>
+            </Box>
 
             <Box sx={{}}>
               <Box
@@ -172,4 +158,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterVendor;

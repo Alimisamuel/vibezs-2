@@ -75,7 +75,7 @@ const CustomInput = () => {
               },
             }}
           />
-          <Box sx={{ width: "70%", margin: "0 auto", mt: 1 }}>
+          <Box sx={{ width: "70%", margin: "0 auto", mt: 2 }}>
             {error ? (
               <CustomButtonGradient disabled sx={{ mt: 1, width: "70%" }}>
                 Not a valid email

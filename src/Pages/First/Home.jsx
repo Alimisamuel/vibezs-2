@@ -344,7 +344,6 @@ const Home = () => {
                           mx: 4,
                           height: "50px",
                           width: "50px",
-                  
                         }}
                       >
                         <img src={img} width={50} />
@@ -399,7 +398,7 @@ const Home = () => {
                     }}
                   >
                     {BrandConfig?.slice(0, 7).map((img, index) => (
-                      <img src={img} />
+                      <img src={img} width={50} />
                     ))}
                   </Box>
                   <Box
@@ -410,7 +409,7 @@ const Home = () => {
                     }}
                   >
                     {BrandConfig?.slice(7, 14).map((img, index) => (
-                      <img src={img} />
+                      <img src={img} width={50} />
                     ))}
                   </Box>
                   <Box
@@ -421,7 +420,7 @@ const Home = () => {
                     }}
                   >
                     {BrandConfig?.slice(14, 19).map((img, index) => (
-                      <img src={img} />
+                      <img src={img} width={50} />
                     ))}
                   </Box>
                 </Box>
@@ -432,7 +431,7 @@ const Home = () => {
 
         <Box
           sx={{
-            mt: 5,
+            mt: 8,
             mb: -5,
             background: `url('${line}')`,
             backgroundSize: "contain",

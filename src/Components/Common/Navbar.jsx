@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo/logo2.svg";
 import CustomButton from "../CustomButton";
 import buildIcon from "../../assets/img/vectors/building.svg";
+import flash from "../../assets/img/vectors/flash.svg";
 
-const Navbar = () => {
+const Navbar = ({ isVendor }) => {
   const [color, setColor] = React.useState(false);
 
   const changeColor = () => {
@@ -36,18 +37,41 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} width={50} />
           </Link>
-          <CustomButton>
-            <img src={buildIcon} style={{ marginRight: "8px" }} width={15} />
-            <Typography
-              sx={{
-                color: "#fff",
-                fontSize: { md: "14px", xs: "10px" },
-                fontWeight: 500,
-              }}
-            >
-              For Vendors
-            </Typography>
-          </CustomButton>
+          {isVendor ? (
+            <Link to="/">
+              <CustomButton>
+                <img src={flash} style={{ marginRight: "8px" }} width={15} />
+                <Typography
+                  sx={{
+                    color: "#fff",
+                    fontSize: { md: "14px", xs: "10px" },
+                    fontWeight: 500,
+                  }}
+                >
+                  For Viberzs
+                </Typography>
+              </CustomButton>
+            </Link>
+          ) : (
+            <Link to="/vendor">
+              <CustomButton>
+                <img
+                  src={buildIcon}
+                  style={{ marginRight: "8px" }}
+                  width={15}
+                />
+                <Typography
+                  sx={{
+                    color: "#fff",
+                    fontSize: { md: "14px", xs: "10px" },
+                    fontWeight: 500,
+                  }}
+                >
+                  For Vendors
+                </Typography>
+              </CustomButton>
+            </Link>
+          )}
         </Box>
       </AppBar>
     </>
