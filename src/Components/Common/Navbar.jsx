@@ -6,9 +6,23 @@ import CustomButton from "../CustomButton";
 import buildIcon from "../../assets/img/vectors/building.svg";
 
 const Navbar = () => {
+  const [color, setColor] = React.useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 60) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
   return (
     <>
-      <AppBar sx={{ background: "#fff", boxShadow: "none" }}>
+      <AppBar
+        className={color ? " appbar_bg" : "appbar"}
+        sx={{ background: "#fff", boxShadow: "none" }}
+      >
         <Box
           sx={{
             p: 3,

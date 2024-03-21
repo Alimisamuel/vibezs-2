@@ -129,42 +129,8 @@ const Footer = () => {
                 <img src={logo} />
               </Link>
             </Box>
-            {isMobile ? (
-              <>
-                <Box>
-                  <Link to="/terms-and-condition">
-                    <Typography sx={{ color: "#c5c5c5", fontSize: "12px" }}>
-                      Terms & Condition
-                    </Typography>
-                  </Link>
-                  <Link to="/privacy-policy">
-                    <Typography
-                      sx={{
-                        color: "#c5c5c5",
-                        fontSize: "12px",
-                        textAlign: "center",
-                        mt: 1,
-                      }}
-                    >
-                      Privacy Policy
-                    </Typography>
-                  </Link>
-                  <Link to="/cookies-policy">
-                    <Typography
-                      sx={{
-                        color: "#c5c5c5",
-                        fontSize: "12px",
-                        textAlign: "center",
-                        mt: 1,
-                      }}
-                    >
-                      Cookies Policy
-                    </Typography>
-                  </Link>
-                </Box>
-              </>
-            ) : (
-              <>
+
+              
                 <Box>
                   <Link to="/terms-and-condition">
                     <Typography sx={{ color: "#c5c5c5", fontSize: "14px" }}>
@@ -172,8 +138,7 @@ const Footer = () => {
                     </Typography>
                   </Link>
                 </Box>
-              </>
-            )}
+        
 
             <Box sx={{}}>
               <Box

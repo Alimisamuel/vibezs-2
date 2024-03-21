@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Box,
   Button,
   Grid,
@@ -24,6 +25,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import logos from "../../assets/img/vectors/logos.svg";
+import { AnimeConfig } from "../../assets/img/anime/AnimeConfig";
 
 const Home = () => {
   const theme = useTheme();
@@ -33,7 +35,7 @@ const Home = () => {
     dots: false,
     Infinite: true,
     arrows: false,
-    slidesToShow: 2,
+    slidesToShow: isMobile ? 8 : 15,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -44,7 +46,7 @@ const Home = () => {
     dots: false,
     Infinite: true,
     arrows: false,
-    slidesToShow: 2,
+    slidesToShow: isMobile ? 8 : 15,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -56,7 +58,7 @@ const Home = () => {
     dots: false,
     Infinite: true,
     arrows: false,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -68,7 +70,7 @@ const Home = () => {
     dots: false,
     Infinite: true,
     arrows: false,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -80,7 +82,7 @@ const Home = () => {
     dots: false,
     Infinite: true,
     arrows: false,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
@@ -110,7 +112,7 @@ const Home = () => {
             pt: 12,
           }}
         >
-          <Grid container spacing={8} sx={{ pb: 7,  }}>
+          <Grid container spacing={8} sx={{ pb: 7 }}>
             <Grid
               item
               md={6}
@@ -136,7 +138,7 @@ const Home = () => {
                 sx={{
                   background: `url('${mock1}')`,
                   width: { lg: "430px", md: "380px" },
-                  height: "520px",
+                  height: { md: "520px", xs: "350px" },
                   borderRadius: "24px",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "bottom",
@@ -150,12 +152,12 @@ const Home = () => {
                   sx={{
                     fontFamily: "butler",
                     color: "#dedede",
-                    fontSize: "22px",
+                    fontSize: { md: "22px", xs: "16px" },
                     textAlign: "center",
                     width: { md: "60%", xs: "80%" },
                     margin: "0 auto",
                     pt: 4,
-                    lineHeight: "28px",
+                    lineHeight: { md: "28px", xs: "20px" },
                   }}
                 >
                   Secure Exclusive Tables at Premier Upscale Dining Spots and
@@ -167,7 +169,7 @@ const Home = () => {
                 sx={{
                   background: `url('${mock3}')`,
                   width: { lg: "430px", md: "380px" },
-                  height: "420px",
+                  height: { md: "420px", xs: "330px" },
                   borderRadius: "24px",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "bottom",
@@ -182,12 +184,12 @@ const Home = () => {
                   sx={{
                     fontFamily: "butler",
                     color: "#dedede",
-                    fontSize: "22px",
+                    fontSize: { md: "22px", xs: "16px" },
                     textAlign: "center",
                     width: { md: "60%", xs: "80%" },
                     margin: "0 auto",
                     pt: 4,
-                    lineHeight: "28px",
+                    lineHeight: { md: "28px", xs: "20px" },
                   }}
                 >
                   Invite Guests to your Table with Ease and Style.
@@ -209,28 +211,27 @@ const Home = () => {
                 sx={{
                   background: `url('${mock2}')`,
                   width: { lg: "430px", md: "380px" },
-                  height: "420px",
+                  height: { md: "420px", xs: "300px" },
                   borderRadius: "24px",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "bottom",
-                  backgroundPositionX: "50px",
+                  backgroundPositionX: "35px",
                   backgroundSize: "contain",
                   backgroundColor: "#04011533",
                   border: "7px solid #2d2e2f",
                   outline: "1px solid #cccccc33",
-                  mt: 4,
                 }}
               >
                 <Typography
                   sx={{
                     fontFamily: "butler",
                     color: "#dedede",
-                    fontSize: "22px",
+                    fontSize: { md: "22px", xs: "16px" },
                     textAlign: "center",
                     width: { md: "60%", xs: "80%" },
                     margin: "0 auto",
                     pt: 4,
-                    lineHeight: "28px",
+                    lineHeight: { md: "28px", xs: "20px" },
                   }}
                 >
                   Effortlessly Split bills with Friends Directly from the App.
@@ -241,7 +242,7 @@ const Home = () => {
                 sx={{
                   background: `url('${mock4}')`,
                   width: { lg: "430px", md: "380px" },
-                  height: "520px",
+                  height: { md: "520px", xs: "300px" },
                   borderRadius: "24px",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "bottom",
@@ -256,12 +257,12 @@ const Home = () => {
                   sx={{
                     fontFamily: "butler",
                     color: "#dedede",
-                    fontSize: "22px",
+                    fontSize: { md: "22px", xs: "16px" },
                     textAlign: "center",
                     width: { md: "60%", xs: "80%" },
                     margin: "0 auto",
                     pt: 4,
-                    lineHeight: "28px",
+                    lineHeight: { md: "28px", xs: "20px" },
                   }}
                 >
                   Connect with New Friends by accepting People's Requests to
@@ -343,13 +344,10 @@ const Home = () => {
                           mx: 4,
                           height: "50px",
                           width: "50px",
-                          background: `url('${img}')`,
-                          backgroundSize: "contain",
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",
+                  
                         }}
                       >
-                        {/* <img src={img} width={100} /> */}
+                        <img src={img} width={50} />
                       </Box>
                     ))}
                   </Slider>
@@ -360,30 +358,24 @@ const Home = () => {
                           mx: 4,
                           height: "50px",
                           width: "50px",
-                          background: `url('${img}')`,
-                          backgroundSize: "contain",
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",
                         }}
                       >
-                        {/* <img src={img} width={100} /> */}
+                        <img src={img} width={50} style={{}} />
                       </Box>
                     ))}
                   </Slider>
                   <Slider {...settings5}>
-                    {BrandConfig?.slice(12, 19).map((img, index) => (
+                    {BrandConfig?.slice(15, 19).map((img, index) => (
                       <Box
                         sx={{
                           mx: 4,
+
                           height: "50px",
                           width: "50px",
-                          background: `url('${img}')`,
-                          backgroundSize: "contain",
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",
+                          pt: 2,
                         }}
                       >
-                        {/* <img src={img} width={100} /> */}
+                        <img src={img} width={60} style={{}} />
                       </Box>
                     ))}
                   </Slider>
@@ -450,56 +442,85 @@ const Home = () => {
           }}
         />
       </Box>
-      <Box
-        sx={{
-          height: { md: "400px", xs: "200px" },
-          overflow: "hidden",
-          mt: 12,
-        }}
-      >
+      <div className="anime">
         <Box
           sx={{
-            // height: "100px",
-            position: "relative",
-            boxSizing: "border-box",
-            top: 60,
-            background: `url('${imgBox}')`,
-            backgroundPosition: "center",
-            backgroundSize: "contain",
-            transform: "rotate(-10deg)",
-            mx: -15,
-            // display: "flex",
-            // alignItems: "center",
+            height: { md: "400px", xs: "200px" },
+            // overflow: "hidden",
+            mt: 12,
           }}
         >
-          <Slider {...settings}>
-            <img src={logos} />
-            <img src={logos} />
-          </Slider>
+          <Box
+            sx={{
+              // height: "100px",
+              position: "relative",
+              boxSizing: "border-box",
+              top: 60,
+              bgcolor: "#FFF2E5",
+              border: "2px dashed #C56000",
+              transform: "rotate(-10deg)",
+              mx: -15,
+              // display: "flex",
+              // alignItems: "center",
+            }}
+          >
+            <Slider {...settings} style={{ height: "100%" }}>
+              {AnimeConfig.map((img, idex) => (
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignContent: "center",
+                    justifyContent: "center",
+
+                    height: "80px",
+                  }}
+                >
+                  {" "}
+                  <Box sx={{ mt: 2.4 }}>
+                    <img src={img} width={50} />
+                  </Box>
+                </Box>
+              ))}
+            </Slider>
+          </Box>
+          <Box
+            sx={{
+              height: "95px",
+              position: "relative",
+              boxSizing: "border-box",
+              bgcolor: "#FFF2E5",
+              border: "2px dashed #C56000",
+              transform: "rotate(10deg)",
+              mx: -15,
+            }}
+          >
+            <Box sx={{ height: "100%" }}>
+              <Slider {...settings2} style={{ height: "100%" }}>
+                {AnimeConfig.map((img, idex) => (
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignContent: "center",
+                      justifyContent: "center",
+
+                      height: "80px",
+                    }}
+                  >
+                    {" "}
+                    <Box sx={{ mt: 2.4 }}>
+                      <img src={img} width={50} />
+                    </Box>
+                  </Box>
+                ))}
+              </Slider>
+            </Box>
+          </Box>
         </Box>
-        <Box
-          sx={{
-            // height: "100px",
-            position: "relative",
-            boxSizing: "border-box",
-            // top: 60,
-            background: `url('${imgBox}')`,
-            backgroundPosition: "center",
-            backgroundSize: "contain",
-            transform: "rotate(10deg)",
-            mx: -15,
-            //  display: "flex",
-            // alignItems: "center",
-          }}
-        >
-          <Slider {...settings2}>
-            <img src={logos} />
-            <img src={logos} />
-          </Slider>
-        </Box>
-      </Box>
+      </div>
       <Box
         sx={{
+          width: "70%",
+          margin: "0 auto",
           background: `url('${line}')`,
           backgroundSize: "contain",
           backgroundPosition: "center",

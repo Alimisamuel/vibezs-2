@@ -6,6 +6,29 @@ body{
     padding: 0%;
     font-family: outfit;
 }
+.appbar {
+    background: transparent !important;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in !important;
+    box-shadow: none !important;
+}
+
+.appbar_bg {
+    background: transparent !important;
+    height: 100px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in !important;
+}
+.anime{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
 }

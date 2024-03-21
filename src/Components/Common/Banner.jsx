@@ -9,7 +9,7 @@ import applestore from "../../assets/img/vectors/appstore.svg";
 const Banner = () => {
   const theme = useTheme();
   const isTab = useMediaQuery(theme.breakpoints.down("1271"));
-  const isSM = useMediaQuery(theme.breakpoints.down("1131"));
+  const isSM = useMediaQuery(theme.breakpoints.down("700"));
   return (
     <>
       {isSM ? (
@@ -21,17 +21,11 @@ const Banner = () => {
               width: "100%",
               background: `url('${bg2}')`,
               backgroundSize: "contain",
-              backgroundPositionY: { md: "100px", lg: "40px", xs: "100px" },
+              backgroundPositionY: { md: "50px", lg: "20px", xs: "100px" },
               backgroundPositionX: "center",
               backgroundRepeat: "no-repeat",
               backgroundAttachment: "fixed ",
               transition: "0.2s all linear",
-              border: {
-                // lg: "5px solid",
-                // md: "15px solid red",
-                // sm: "10px  solid",
-                // xs: "20px solid",
-              },
             }}
           >
             <Box
@@ -49,7 +43,7 @@ const Banner = () => {
             >
               <img src={launchImg} width={150} />
               <Typography
-         className="     text_3_m"
+                className="     text_3_m"
                 sx={{
                   color: "#151515",
                   fontWeight: 800,
@@ -61,8 +55,8 @@ const Banner = () => {
               >
                 Book & Reserve the most <span className="text_2_m">e</span>
                 xclusive Tables at the
-          <span className="text"> Elitist Spots</span> in
-                    <span className="">  your City</span>🌴 
+                <span className="text"> Elitist Spots</span> in
+                <span className=""> your City</span>🌴
               </Typography>
               <Typography
                 sx={{
@@ -102,7 +96,7 @@ const Banner = () => {
               width: "100%",
               background: `url('${bg}')`,
               backgroundSize: { md: "auto 1400px", sm: " auto 1300px" },
-              backgroundPositionY: { md: "100px", lg: "40px", sm: "100px" },
+              backgroundPositionY: { md: "100px", lg: "120px", sm: "100px" },
               backgroundPositionX: "center",
               backgroundRepeat: "no-repeat",
               backgroundAttachment: "fixed ",
